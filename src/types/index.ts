@@ -64,6 +64,12 @@ export interface Product {
     startDate: Date;
     endDate: Date;
   };
+  // Product-specific fields
+  productType?: 'instant' | 'ready-to-drink' | 'masala-mix' | 'other';
+  weight?: string;
+  servings?: number;
+  shelfLife?: string;
+  storageInstructions?: string;
 }
 
 export interface NutritionalInfo {

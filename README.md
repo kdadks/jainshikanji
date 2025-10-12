@@ -1,6 +1,6 @@
-# 🥤 Jain Shikanji - Premium Indian Food Restaurant Platform
+# 🥤 Jain Shikanji - Enterprise Restaurant Platform
 
-A modern, full-featured restaurant management and food ordering platform built with React, TypeScript, and Tailwind CSS. Features customer ordering, loyalty programs, admin dashboard, and AI chat assistant.
+A modern, enterprise-grade restaurant management and food ordering platform built with React, TypeScript, and Tailwind CSS. Designed for scalability and featuring customer ordering, loyalty programs, comprehensive admin dashboard, and AI-powered chat assistant.
 
 ![Jain Shikanji](https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200)
 
@@ -501,6 +501,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by the Jain Shikanji Team**
+## 📚 Additional Documentation
 
-*Serving authentic Indian food and North Indian cuisine since 1995*
+- **[Product Requirements Document (PRD)](docs/PRD.md)** - Comprehensive feature list and roadmap
+- **[Enterprise Architecture Plan](docs/ARCHITECTURE.md)** - Scalability and infrastructure guide
+- **[API Documentation](docs/API.md)** - API reference (Coming soon)
+- **[Contributing Guide](docs/CONTRIBUTING.md)** - How to contribute (Coming soon)
+
+---
+
+**© 2025 Jain Shikanji. All rights reserved.**
+
+*Serving authentic Indian vegetarian cuisine with technology excellence since 1995*

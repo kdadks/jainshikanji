@@ -41,6 +41,7 @@ const Header = () => {
   const navLinks = [
     { name: 'Home', href: '/', current: location.pathname === '/' },
     { name: 'Menu', href: '/menu', current: location.pathname === '/menu' },
+    { name: 'Products', href: '/products', current: location.pathname === '/products' },
     { name: 'Loyalty', href: '/loyalty', current: location.pathname === '/loyalty' },
     { name: 'About', href: '/', current: false, scrollTo: 'about' },
     { name: 'Contact', href: '/', current: false, scrollTo: 'contact' },
@@ -49,10 +50,10 @@ const Header = () => {
   const adminNavLinks = [
     { name: 'Dashboard', href: '/admin', current: location.pathname === '/admin' },
     { name: 'Products', href: '/admin/products', current: location.pathname === '/admin/products' },
+    { name: 'Menu Items', href: '/admin/menu', current: location.pathname === '/admin/menu' },
     { name: 'Orders', href: '/admin/orders', current: location.pathname === '/admin/orders' },
     { name: 'Customers', href: '/admin/customers', current: location.pathname === '/admin/customers' },
     { name: 'Analytics', href: '/admin/analytics', current: location.pathname === '/admin/analytics' },
-    { name: 'Settings', href: '/admin/settings', current: location.pathname === '/admin/settings' },
   ];
 
   const handleNavClick = (link: any) => {
