@@ -3,6 +3,16 @@ compatibility_date = "2024-10-01"
 main = "functions/_worker.ts"
 assets = { directory = "./dist", binding = "ASSETS" }
 
+# Observability and logging configuration
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = false
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
+
 # Environment variables (add your production values)
 [vars]
 ENVIRONMENT = "production"
