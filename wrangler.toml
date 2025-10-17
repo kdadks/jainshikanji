@@ -1,0 +1,31 @@
+name = "jainshikanji"
+compatibility_date = "2024-10-01"
+main = "functions/_worker.js"
+
+# Asset configuration for serving static files
+[site]
+bucket = "./dist"
+
+# Environment variables (add your production values)
+[vars]
+ENVIRONMENT = "production"
+
+# KV Namespaces for storing data (create these in Cloudflare dashboard)
+# [[kv_namespaces]]
+# binding = "PRODUCTS"
+# id = "your-kv-namespace-id"
+
+# [[kv_namespaces]]
+# binding = "ORDERS"
+# id = "your-kv-namespace-id"
+
+# D1 Database for SQL storage (optional, create in Cloudflare dashboard)
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "jainshikanji-db"
+# database_id = "your-database-id"
+
+# R2 Bucket for file storage (optional)
+# [[r2_buckets]]
+# binding = "IMAGES"
+# bucket_name = "jainshikanji-images"
