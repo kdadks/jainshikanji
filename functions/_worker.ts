@@ -1,18 +1,16 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
-import { serveStatic } from 'hono/cloudflare-workers';
-import manifest from '__STATIC_CONTENT_MANIFEST';
 
 // Define the environment type
-type Bindings = {
-  __STATIC_CONTENT: any;
-  PRODUCTS?: KVNamespace;
-  ORDERS?: KVNamespace;
-  DB?: D1Database;
-  IMAGES?: R2Bucket;
-};
+interface Env {
+  ASSETS: any;
+  PRODUCTS?: any;
+  ORDERS?: any;
+  DB?: any;
+  IMAGES?: any;
+}
 
-const app = new Hono<{ Bindings: Bindings }>();
+const app = new Hono<{ Bindings: Env }>();
 
 // Enable CORS for API calls
 app.use('/api/*', cors());
@@ -47,6 +45,7 @@ app.get('/api/products/:id', async (c) => {
 // Orders API
 app.post('/api/orders', async (c) => {
   const body = await c.req.json();
+  console.log('Order received:', body);
   // Process order and store in KV or D1
   return c.json({
     success: true,
@@ -67,6 +66,7 @@ app.get('/api/orders/:id', async (c) => {
 // Cart API
 app.post('/api/cart', async (c) => {
   const body = await c.req.json();
+  console.log('Cart updated:', body);
   return c.json({
     success: true,
     message: 'Cart updated'
@@ -76,6 +76,7 @@ app.post('/api/cart', async (c) => {
 // Payment API (integrate with payment gateway)
 app.post('/api/payment/initiate', async (c) => {
   const body = await c.req.json();
+  console.log('Payment initiated:', body);
   // Integrate with Stripe, Razorpay, or other payment gateway
   return c.json({
     success: true,
@@ -105,10 +106,7 @@ app.get('/api/analytics/dashboard', async (c) => {
   });
 });
 
-// Serve static assets (React build)
-app.get('*', serveStatic({ root: './', manifest }));
-
-// Fallback to index.html for client-side routing
-app.get('*', serveStatic({ path: './index.html', manifest }));
+// Serve static assets - handled by Cloudflare Pages
+// The static files from dist/ will be served automatically
 
 export default app;

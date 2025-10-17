@@ -1,10 +1,7 @@
 name = "jainshikanji"
 compatibility_date = "2024-10-01"
-main = "functions/_worker.js"
-
-# Asset configuration for serving static files
-[site]
-bucket = "./dist"
+main = "functions/_worker.ts"
+assets = { directory = "./dist", binding = "ASSETS" }
 
 # Environment variables (add your production values)
 [vars]
