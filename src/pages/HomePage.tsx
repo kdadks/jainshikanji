@@ -68,8 +68,8 @@ const HomePage = () => {
   ];
 
   const stats = [
-    { number: '25+', label: 'Years of Excellence', suffix: '' },
-    { number: '50', label: 'Happy Customers', suffix: 'k+' },
+    { number: '60', label: 'Years of Excellence', suffix: '+' },
+    { number: '10', label: 'Happy Customers', suffix: 'M+' },
     { number: '4.8', label: 'Average Rating', suffix: '★' },
     { number: '100', label: 'Vegetarian', suffix: '%' }
   ];
@@ -483,19 +483,19 @@ const HomePage = () => {
                 {
                   icon: '📍',
                   title: 'Visit Us',
-                  details: ['123 MG Road, Bangalore', 'Karnataka 560001'],
+                  details: ['Jain Shikanji, Kadrabad, Vikash Nagar Colony, Delhi Merrut Road Modinagar, Ghaziabad – 201201'],
                   color: 'from-blue-500 to-cyan-600'
                 },
                 {
                   icon: '📞',
                   title: 'Call Us',
-                  details: ['+91 9876543210', 'Daily: 11 AM - 11 PM'],
+                  details: ['+91-9219448748', 'Daily: 11 AM - 11 PM'],
                   color: 'from-green-500 to-emerald-600'
                 },
                 {
                   icon: '✉️',
                   title: 'Email Us',
-                  details: ['hello@jainshikanji.com', 'We reply within 24 hours'],
+                  details: ['info@jainshikanji.com', 'We reply within 24 hours'],
                   color: 'from-purple-500 to-violet-600'
                 }
               ].map((contact, index) => (
