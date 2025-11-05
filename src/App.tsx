@@ -8,6 +8,7 @@ import ProductsPage from './pages/ProductsPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import OrderTrackingPage from './pages/OrderTrackingPage';
+import AboutPage from './pages/AboutPage';
 import AdminDashboard from './pages/AdminDashboard';
 import ProductManagement from './pages/ProductManagement';
 import AdminProducts from './pages/AdminProducts';
@@ -49,6 +50,7 @@ function App() {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/menu" element={<MenuPage />} />
                     <Route path="/products" element={<ProductsPage />} />
+                    <Route path="/about" element={<AboutPage />} />
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/checkout" element={<CheckoutPage />} />
                     <Route path="/loyalty" element={<LoyaltyProgram />} />

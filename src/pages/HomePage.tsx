@@ -106,12 +106,12 @@ const HomePage = () => {
                   className="inline-flex items-center space-x-2 bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium"
                 >
                   <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
-                  <span>25+ Years of Authentic Flavors</span>
+                  <span>60+ Years of Authentic Flavors</span>
                 </motion.div>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight text-balance">
                   Authentic
-                  <span className="block gradient-text-brand">Indian Food</span>
+                  <span className="block gradient-text-brand">Indian Food & Soft Drinks</span>
                   <span className="block">Delivered Fresh</span>
                 </h1>
                 
@@ -365,7 +365,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section - Teaser */}
       <section id="about" className="section-padding bg-white">
         <div className="max-w-7xl mx-auto container-padding">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -378,38 +378,49 @@ const HomePage = () => {
             >
               <div className="space-y-6">
                 <div className="inline-flex items-center space-x-2 bg-brand-100 text-brand-800 px-4 py-2 rounded-full text-sm font-medium">
-                  <span>🏛️</span>
+                  <span>🌿</span>
                   <span>Our Heritage</span>
                 </div>
 
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                  Crafting Authentic <span className="gradient-text-brand">Indian Flavors</span> Since 1995
+                  From a <span className="gradient-text-brand">Bicycle</span> to a
+                  <span className="block">Beloved Brand</span>
                 </h2>
-                
+
                 <div className="space-y-4 text-gray-600 leading-relaxed">
                   <p>
-                    Founded in 1995, Jain Shikanji began as a small family business with a simple mission: 
-                    to bring authentic Indian food and North Indian cuisine to food lovers everywhere.
+                    In 1957, Late Shri Parmatma Sharan Ji began with a humble bicycle pan shop,
+                    offering free lemon water to children suffering from summer heat. That simple
+                    act of kindness became the foundation of Jain Shikanji.
                   </p>
                   <p>
-                    Our recipes have been passed down through generations, each dish crafted with love and 
-                    traditional techniques that honor the rich heritage of Indian cuisine.
+                    In 1994, his son Shri Satish Jain Ji officially founded the brand, nurturing it
+                    with passion and vision. Today, we serve across 21 outlets in 4 states, carrying
+                    forward a legacy of purity, flavor, and trust.
                   </p>
                 </div>
+
+                <Link
+                  to="/about"
+                  className="btn btn-primary btn-lg group inline-flex items-center"
+                >
+                  <span>Read Our Full Story</span>
+                  <ArrowRightIcon className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
+                </Link>
               </div>
 
               <div className="grid grid-cols-2 gap-8">
                 <div className="text-center p-6 bg-orange-50 rounded-2xl">
-                  <div className="text-3xl font-bold text-orange-600 mb-2">25+</div>
+                  <div className="text-3xl font-bold text-orange-600 mb-2">67+</div>
                   <div className="text-sm font-medium text-gray-700">Years of Excellence</div>
                 </div>
                 <div className="text-center p-6 bg-green-50 rounded-2xl">
-                  <div className="text-3xl font-bold text-green-600 mb-2">50k+</div>
-                  <div className="text-sm font-medium text-gray-700">Happy Customers</div>
+                  <div className="text-3xl font-bold text-green-600 mb-2">21</div>
+                  <div className="text-sm font-medium text-gray-700">Outlets Across India</div>
                 </div>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -423,7 +434,7 @@ const HomePage = () => {
                   alt="Our Restaurant Heritage"
                   className="rounded-3xl shadow-2xl w-full h-[400px] lg:h-[500px] object-cover"
                 />
-                
+
                 {/* Floating Achievement Card */}
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -436,8 +447,8 @@ const HomePage = () => {
                     <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-xl flex items-center justify-center mx-auto mb-3">
                       <StarIcon className="w-6 h-6 text-white" />
                     </div>
-                    <div className="text-lg font-bold text-gray-900">Award Winner</div>
-                    <div className="text-sm text-gray-600">Best Traditional Beverages 2023</div>
+                    <div className="text-lg font-bold text-gray-900">First Indian</div>
+                    <div className="text-sm text-gray-600">Spiced Soft Drink (2021)</div>
                   </div>
                 </motion.div>
               </div>

@@ -43,7 +43,7 @@ const Header = () => {
     { name: 'Menu', href: '/menu', current: location.pathname === '/menu' },
     { name: 'Products', href: '/products', current: location.pathname === '/products' },
     { name: 'Loyalty', href: '/loyalty', current: location.pathname === '/loyalty' },
-    { name: 'About', href: '/', current: false, scrollTo: 'about' },
+    { name: 'About', href: '/about', current: location.pathname === '/about' },
     { name: 'Contact', href: '/', current: false, scrollTo: 'contact' },
   ];
 
